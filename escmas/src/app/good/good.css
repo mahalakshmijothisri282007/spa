@@ -1,0 +1,59 @@
+/* Container for the grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Individual Card Styling */
+.product-card {
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+  padding: 16px;
+}
+
+/* Typography */
+h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2rem;
+  color: #333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* Keeps titles to one line */
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.4;
+  height: 3.8em; /* Limits description height */
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.price {
+  font-weight: bold;
+  color: #2c3e50;
+  margin-top: auto;
+  font-size: 1.1rem;
+}
+
+.price span {
+  color: #27ae60; /* Makes the price green */
+}

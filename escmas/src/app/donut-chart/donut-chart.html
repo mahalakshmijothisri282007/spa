@@ -1,0 +1,16 @@
+<div class="container mt-5">
+
+  <app-loading *ngIf="isLoading"></app-loading>
+
+  <div *ngIf="!isLoading" class="card shadow border-0 p-4 text-center">
+    <h3 class="mb-4 text-secondary">Campus Population</h3>
+    
+    <apx-chart
+      [series]="donutSeries"
+      [chart]="{ type: 'donut', height: 380 }"
+      [labels]="donutLabels"
+      [legend]="{ position: 'bottom' }">
+    </apx-chart>
+  </div>
+
+</div>

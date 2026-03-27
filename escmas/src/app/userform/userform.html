@@ -1,0 +1,12 @@
+<h2>form</h2>
+<form [formGroup]="userForm" >
+  <label >Name:</label>
+  <input type="text" placeholder="enter the name " formControlName="name" />
+
+  <label >Email:</label>
+  <input type="email" placeholder="enter the email " formControlName="email" />
+
+  <label >Password:</label>
+  <input type="password" placeholder="enter the password " formControlName="password" />
+
+  <button type="submit" (click)="onSubmit()">Submit</button>
